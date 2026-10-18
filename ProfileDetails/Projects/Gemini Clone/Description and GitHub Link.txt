@@ -1,0 +1,5 @@
+https://github.com/thamizhkarthik05/Gemini-Clone.git
+
+Description 
+
+The project clones gemini AI with the Name Nila. This used simple LLM model to generate the results.

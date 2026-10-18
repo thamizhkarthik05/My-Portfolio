@@ -1,0 +1,9 @@
+https://github.com/thamizhkarthik05/Journey360.git
+
+Journey360:
+A smart travel companion that:
+1. Generates personalized itineraries based on user preferences
+2. Provides real-time navigation with AR guidance
+3. Offers offline translation & emergency SOS features
+4. Delivers live safety insights using news and weather data
+5. Enables dynamic itinerary updates in real-time

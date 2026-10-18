@@ -1,0 +1,1 @@
+Successfully completed the A Tour of Google Cloud Hands-on Labs project authorized by Google Cloud and offered through Coursera. Gained hands-on experience with Google Cloud Console navigation, project management, IAM roles and permissions, cloud resources, and core Google Cloud platform concepts.

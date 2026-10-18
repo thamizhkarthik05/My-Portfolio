@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="foldA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#35D5F2" />
+      <stop offset="100%" stop-color="#7657FF" />
+    </linearGradient>
+    <linearGradient id="foldB" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7657FF" />
+      <stop offset="100%" stop-color="#17143A" />
+    </linearGradient>
+    <linearGradient id="foldC" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C7B8FF" />
+      <stop offset="100%" stop-color="#35D5F2" />
+    </linearGradient>
+  </defs>
+  <!-- Background Diamond -->
+  <rect width="64" height="64" rx="16" fill="#0B1020" />
+  <!-- Origami crane/faceted fold polygons -->
+  <polygon points="32,8 54,26 32,36" fill="url(#foldA)" opacity="0.95" />
+  <polygon points="32,8 10,26 32,36" fill="url(#foldC)" opacity="0.9" />
+  <polygon points="32,36 54,26 44,56" fill="url(#foldB)" opacity="0.85" />
+  <polygon points="32,36 10,26 20,56" fill="url(#foldA)" opacity="0.85" />
+  <polygon points="32,36 20,56 32,48 44,56" fill="#7657FF" />
+  <!-- Center vertex sparkle -->
+  <circle cx="32" cy="36" r="2.5" fill="#35D5F2" />
+</svg>

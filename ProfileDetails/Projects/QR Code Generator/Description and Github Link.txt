@@ -1,0 +1,3 @@
+https://github.com/thamizhkarthik05/QR-Code-Generator.git
+
+A simple basic QR code generator with the help of external APIs by giving the content and size of the QR in pixels.

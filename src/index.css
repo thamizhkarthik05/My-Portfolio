@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-midnight: #0B1020;
+    --color-midnight-secondary: #10182D;
+    --color-card-surface: #151F38;
+    --color-alt-surface: #1B2642;
+    --color-indigo-deep: #17143A;
+    --color-violet-electric: #8B6CFF;
+    --color-cyan-vivid: #39D9F5;
+    --color-lavender-soft: #C7B8FF;
+    --color-warm-white: #F5F7FF;
+    --color-slate-muted: #A8B4D0;
+    --border-subtle: rgba(139, 108, 255, 0.22);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section {
+    scroll-margin-top: 5rem;
+  }
+
+  body {
+    background-color: #0B1020;
+    color: #F5F7FF;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0B1020;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1B2642;
+    border-radius: 4px;
+    border: 1px solid rgba(139, 108, 255, 0.2);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8B6CFF;
+  }
+}
+
+@layer utilities {
+  /* Origami polygon masks and facet edges */
+  .origami-clip-hero {
+    clip-path: polygon(0 4%, 96% 0, 100% 94%, 6% 100%);
+  }
+
+  .origami-clip-card {
+    clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
+  }
+
+  .origami-clip-badge {
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+  }
+
+  .origami-clip-diagonal {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+  }
+
+  .origami-clip-folded {
+    clip-path: polygon(0 0, 92% 0, 100% 8%, 100% 100%, 8% 100%, 0 92%);
+  }
+
+  /* Subtle origami fold crease gradient */
+  .origami-crease {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.35) 100%);
+  }
+
+  /* Geometric background patterns */
+  .bg-origami-grid {
+    background-image: 
+      linear-gradient(to right, rgba(139, 108, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(139, 108, 255, 0.035) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .bg-origami-mesh {
+    background: 
+      radial-gradient(circle at 15% 20%, rgba(139, 108, 255, 0.12) 0%, transparent 40%),
+      radial-gradient(circle at 85% 75%, rgba(57, 217, 245, 0.10) 0%, transparent 45%),
+      transparent;
+  }
+
+  /* Pause marquee on hover */
+  .pause-on-hover:hover {
+    animation-play-state: paused;
+  }
+
+  /* Card surface token helper */
+  .surface-card {
+    background-color: #151F38;
+    border: 1px solid rgba(139, 108, 255, 0.22);
+  }
+
+  .surface-card-alt {
+    background-color: #1B2642;
+    border: 1px solid rgba(139, 108, 255, 0.22);
+  }
+
+  /* Unconditional Hackathon Continuous Marquee */
+  @keyframes marqueeContinuous {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-hackathon-marquee {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    animation: marqueeContinuous 30s linear infinite;
+    will-change: transform;
+  }
+
+  .animate-hackathon-marquee:hover,
+  .animate-hackathon-marquee:focus-within {
+    animation-play-state: paused;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

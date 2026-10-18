@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1628"/>
+      <stop offset="50%" stop-color="#151F38"/>
+      <stop offset="100%" stop-color="#080D1A"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#39D9F5"/>
+      <stop offset="100%" stop-color="#8B6CFF"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B6CFF"/>
+      <stop offset="100%" stop-color="#39D9F5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Origami Grid Lines -->
+  <path d="M0,100 L600,500 M0,500 L600,100 M300,0 L300,600 M0,300 L600,300" stroke="#8B6CFF" stroke-width="1" stroke-dasharray="4,8" opacity="0.15"/>
+  
+  <!-- Outer Glow Circle -->
+  <circle cx="300" cy="270" r="180" fill="none" stroke="#39D9F5" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="300" cy="270" r="140" fill="none" stroke="#8B6CFF" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Radio Waves -->
+  <path d="M220,240 A100,100 0 0,0 220,300" fill="none" stroke="#39D9F5" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M190,210 A140,140 0 0,0 190,330" fill="none" stroke="#39D9F5" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  <path d="M380,240 A100,100 0 0,1 380,300" fill="none" stroke="#39D9F5" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M410,210 A140,140 0 0,1 410,330" fill="none" stroke="#39D9F5" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Shield Icon (Data Privacy) -->
+  <path d="M300,160 L360,190 V270 C360,320 300,360 300,360 C300,360 240,320 240,270 V190 Z" fill="url(#shieldGrad)" opacity="0.9"/>
+  <!-- Keyhole in Shield -->
+  <circle cx="300" cy="245" r="16" fill="#0E1628"/>
+  <polygon points="295,245 305,245 308,280 292,280" fill="#0E1628"/>
+
+  <!-- Station Badge -->
+  <rect x="180" y="410" width="240" height="38" rx="19" fill="#080D1A" stroke="#39D9F5" stroke-width="1.5"/>
+  <text x="300" y="434" text-anchor="middle" fill="#39D9F5" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" letter-spacing="2">VIT COMMUNITY RADIO 90.8</text>
+
+  <!-- Title Text -->
+  <text x="300" y="490" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" letter-spacing="-0.5">DATA PRIVACY DAY</text>
+  <text x="300" y="525" text-anchor="middle" fill="#C7B8FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="600">Special Talk with RJ Kaarthik</text>
+</svg>

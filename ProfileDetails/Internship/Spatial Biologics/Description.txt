@@ -1,0 +1,3 @@
+Software Development Internship Certificate – Spatial Biologics
+
+Certificate of completion for my 1-month Software Development Internship at Spatial Biologics Private Limited, where I contributed to the development of a web-based computational application. My work involved implementing frontend and backend components, designing responsive user interfaces, developing server-side functionalities, and optimizing workflows for efficient data processing and seamless user interaction.
