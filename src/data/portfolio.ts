@@ -226,7 +226,7 @@ export const portfolioData = {
       degree: "Higher Secondary Education (Class 12)",
       period: "Completed with Distinction",
       score: "Class 12 Grade: 93.4%",
-      scoreDetail: "Strong academic foundation in Mathematics, Physics, Chemistry and Computer Science",
+      scoreDetail: "Strong academic foundation in Mathematics, Physics, Chemistry",
       highlights: [
         "Consistent academic excellence with focus on analytical problem solving and mathematics",
         "Active participation in inter-school science symposiums, informatics events, and creative writing",
@@ -425,11 +425,10 @@ export const portfolioData = {
       iconName: "Code2",
       description: "Core languages used for systems engineering, backend logic, and algorithms.",
       skills: [
-        { name: "Python", highlight: true },
-        { name: "JavaScript (ES6+)", highlight: true },
-        { name: "TypeScript", highlight: true },
+        { name: "Java", highlight: true },
+        { name: "JavaScript", highlight: true },
         { name: "C / C++", highlight: false },
-        { name: "Java", highlight: false },
+        { name: "Python", highlight: false },
         { name: "SQL", highlight: false },
       ],
     },
@@ -480,9 +479,7 @@ export const portfolioData = {
       description: "Hardware microcontrollers, sensor integration, and computer network protocols.",
       skills: [
         { name: "Arduino IDE & Sensors", highlight: true },
-        { name: "Computer Networks & Protocols", highlight: true },
-        { name: "Hardware Interfacing", highlight: false },
-        { name: "Cybersecurity Basics (Phishing Detection)", highlight: false },
+        { name: "Computer Networks & Protocols", highlight: false },
       ],
     },
     {

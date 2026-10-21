@@ -32,7 +32,7 @@ function App() {
     <>
       {showLoader && (
         <SolarSystemLoader
-          minDuration={1200}
+          minDuration={2400}
           onComplete={() => setShowLoader(false)}
         />
       )}
